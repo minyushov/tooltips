@@ -20,23 +20,19 @@ import android.view.View;
 
 /**
  * Created by Tomer on 30/06/2016.
- *
  */
 class Coordinates {
+  int left;
+  int top;
+  int right;
+  int bottom;
 
-    int left;
-    int top;
-    int right;
-    int bottom;
-
-    Coordinates(View view) {
-        int[] location = new int[2];
-        view.getLocationOnScreen(location);
-        left = location[0];
-        right = left + view.getWidth();;
-        top = location[1];
-        bottom = top + view.getHeight();
-    }
-
-
+  Coordinates(View view) {
+    int[] location = new int[2];
+    view.getLocationOnScreen(location);
+    left = location[0];
+    right = left + view.getWidth();
+    top = location[1];
+    bottom = top + view.getHeight();
+  }
 }

@@ -1,5 +1,1 @@
-<manifest package="com.tomergoldst.tooltips">
-
-    <application />
-
-</manifest>
+<manifest package="com.tomergoldst.tooltips" />
