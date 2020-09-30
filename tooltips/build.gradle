@@ -14,12 +14,6 @@ android {
     sourceCompatibility javaVersion
     targetCompatibility javaVersion
   }
-
-  libraryVariants.all {
-    it.generateBuildConfigProvider.configure {
-      it.enabled = false
-    }
-  }
 }
 
 dependencies {
@@ -31,7 +25,7 @@ bintray {
   repo = "android"
   groupId = "com.minyushov.android"
   artifactId = "tooltips"
-  version = "2.0.0"
+  version = "2.0.1"
   vcsUrl = "https://github.com/minyushov/tooltips.git"
   license = "Apache-2.0"
   docsSettings {
