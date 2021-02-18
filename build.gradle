@@ -3,25 +3,24 @@ buildscript {
     androidMinSdkVersion = 14
     androidCompileSdkVersion = 30
     androidTargetSdkVersion = 30
-    androidBuildToolsVersion = "30.0.2"
+    androidBuildToolsVersion = "30.0.3"
     javaVersion = JavaVersion.VERSION_1_8
   }
 
   repositories {
     google()
-    jcenter()
+    mavenCentral()
   }
 
   dependencies {
-    classpath "com.android.tools.build:gradle:4.2.0-alpha12"
-    classpath "com.minyushov.gradle:bintray:2.0.0"
+    classpath "com.android.tools.build:gradle:7.0.0-alpha06"
   }
 }
 
 allprojects {
   repositories {
     google()
-    jcenter()
+    mavenCentral()
   }
 }
 
